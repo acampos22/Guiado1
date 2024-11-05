@@ -1,0 +1,42 @@
+<div>
+    <form>
+      <table>
+        <tr>
+          <td colspan="4">
+            <input type="text" id="display" name="display" [value]="display" readonly>
+          </td>
+        </tr>
+        <tr>
+          <td><button type="button" (click)="limpiar()">C</button></td>
+          <td></td>
+          <td></td>
+          <td><button type="button" (click)="definirOperacion('/')">/</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" (click)="adicionarNumero('7')">7</button></td>
+          <td><button type="button" (click)="adicionarNumero('8')">8</button></td>
+          <td><button type="button" (click)="adicionarNumero('9')">9</button></td>
+          <td><button type="button" (click)="definirOperacion('x')">x</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" (click)="adicionarNumero('4')">4</button></td>
+          <td><button type="button" (click)="adicionarNumero('5')">5</button></td>
+          <td><button type="button" (click)="adicionarNumero('6')">6</button></td>
+          <td><button type="button" (click)="definirOperacion('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" (click)="adicionarNumero('1')">1</button></td>
+          <td><button type="button" (click)="adicionarNumero('2')">2</button></td>
+          <td><button type="button" (click)="adicionarNumero('3')">3</button></td>
+          <td><button type="button" (click)="definirOperacion('+')">+</button></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button type="button" (click)="adicionarNumero('0')">0</button></td>
+          <td><button type="button" (click)="adicionarNumero('.')">.</button></td>
+          <td><button type="button" (click)="calcular()">=</button></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  
